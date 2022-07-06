@@ -35,11 +35,18 @@ let arr = [12, 32, 22, 45, 78, 12, 50];
 //
 // Input: [20, '234', 'car', 41, 20, 'chair']
 // Output: 81
-const sumNums = (arr) => {
-  let sum;
-  // write your code here
-  return sum;
-};
+function sumNums(arr){
+let Sum_Nums = 0;
+let x = 0;
+for (var i = 0; i < arr.length; i++) {
+x = arr[i]
+if ( x + x == 2 * x) {
+  Sum_Nums = Sum_Nums + x;
+  } 
+}
+return Sum_Nums;
+}
+
 // -------------------------------------------------------------------------------------------------------
 
 module.exports = { findMax, sumNums };
